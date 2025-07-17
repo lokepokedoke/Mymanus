@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manus Browser Automation - AI-Powered Web Task Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        }
+        .terminal {
+            background: #1a1a1a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">M</span>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">Manus</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+                    <a href="#examples" class="text-gray-600 hover:text-blue-600">Examples</a>
+                    <a href="https://github.com/lokepokedoke/Mymanus" class="bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+                ⚡ AI-Powered Browser Automation
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Automate Any</span>
+                <br>
+                <span class="text-gray-900">Web Task</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Manus uses advanced AI to understand and interact with websites just like a human would. 
+                Automate repetitive tasks, extract data, and streamline workflows with natural language commands.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="gradient-bg text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90">
+                    Get Started →
+                </button>
+                <button class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50">
+                    View Demo ↗
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">10,000+</div>
+                    <div class="text-gray-600">Tasks Automated</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">99.9%</div>
+                    <div class="text-gray-600">Uptime</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                    <div class="text-gray-600">Websites Supported</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                    <div class="text-gray-600">AI Availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Manus?</h2>
+                <p class="text-xl text-gray-600">Built for the modern web with cutting-edge AI technology</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">AI-Powered Intelligence</h3>
+                    <p class="text-gray-600 text-center">Advanced AI understands web pages and adapts to changes automatically</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600 text-center">Execute complex workflows in seconds, not hours</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">🔒</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Reliable & Secure</h3>
+                    <p class="text-gray-600 text-center">Enterprise-grade security with robust error handling</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">💬</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">No Code Required</h3>
+                    <p class="text-gray-600 text-center">Natural language instructions - no programming needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Browser Automation Use Cases</h2>
+                <p class="text-xl text-gray-600">From simple data extraction to complex workflow automation</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg border hover:shadow-xl transition-shadow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="text-2xl">🛒</span>
+                        <h3 class="text-xl font-semibold">E-commerce Automation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Automate product research, price monitoring, and inventory management across multiple platforms.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Price comparison across sites</li>
+                        <li>✓ Product availability tracking</li>
+                        <li>✓ Automated order processing</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg border hover:shadow-xl transition-shadow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="text-2xl">📊</span>
+                        <h3 class="text-xl font-semibold">Data Collection & Research</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Extract and organize information from websites, social media, and databases at scale.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Lead generation from LinkedIn</li>
+                        <li>✓ Market research automation</li>
+                        <li>✓ Competitor analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg border hover:shadow-xl transition-shadow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="text-2xl">📝</span>
+                        <h3 class="text-xl font-semibold">Form Automation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Streamline repetitive form filling, applications, and data entry tasks.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>✓ Job application automation</li>
+                        <li>✓ CRM data entry</li>
+                        <li>✓ Survey completion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Real-World Examples</h2>
+                <p class="text-xl text-gray-600">See how businesses are using Manus to transform their workflows</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-xl p-8 shadow-xl">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="text-2xl">💰</span>
+                        <div>
+                            <h3 class="text-xl font-semibold">E-commerce Price Monitoring</h3>
+                            <p class="text-gray-600">Automated competitor analysis</p>
+                        </div>
+                    </div>
+                    <div class="terminal mb-4">
+                        <div>$ manus "Monitor prices for iPhone 15 on Amazon, Best Buy, and Target"</div>
+                        <div class="text-gray-400 mt-2">✓ Checking Amazon...</div>
+                        <div class="text-gray-400">✓ Checking Best Buy...</div>
+                        <div class="text-gray-400">✓ Checking Target...</div>
+                        <div class="text-blue-400 mt-2">📊 Price comparison saved to spreadsheet</div>
+                    </div>
+                    <p class="text-gray-600">
+                        Automatically track product prices across multiple retailers, detect changes, 
+                        and generate reports - all with a single command.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-xl">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="text-2xl">👥</span>
+                        <div>
+                            <h3 class="text-xl font-semibold">Lead Generation</h3>
+                            <p class="text-gray-600">LinkedIn automation</p>
+                        </div>
+                    </div>
+                    <div class="terminal mb-4">
+                        <div>$ manus "Find software engineers in San Francisco and add to CRM"</div>
+                        <div class="text-gray-400 mt-2">✓ Searching LinkedIn...</div>
+                        <div class="text-gray-400">✓ Extracting profiles...</div>
+                        <div class="text-gray-400">✓ Adding to Salesforce...</div>
+                        <div class="text-blue-400 mt-2">👥 Added 47 new leads to CRM</div>
+                    </div>
+                    <p class="text-gray-600">
+                        Automatically find potential customers, extract contact information, 
+                        and populate your CRM with qualified leads.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Automate Your Workflow?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join thousands of businesses already using Manus to save time and increase productivity.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                    Start Free Trial →
+                </button>
+                <a href="https://github.com/lokepokedoke/Mymanus" class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600">
+                    View on GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">M</span>
+                        </div>
+                        <span class="text-xl font-bold">Manus</span>
+                    </div>
+                    <p class="text-gray-400">AI-powered browser automation for the modern web.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white">Features</a></li>
+                        <li><a href="#examples" class="hover:text-white">Examples</a></li>
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/lokepokedoke/Mymanus" class="hover:text-white">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Manus. All rights reserved. Built with ❤️ for automation enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
